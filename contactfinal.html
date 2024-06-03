@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Aim-E</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <style>
+    body{
+      background-color: Black;
+      color: white;
+      a: #0DFDFA;
+      a:visited: #0DFDFA;
+      font-family: 'Space Mono', monospace;
+      background-image: url('background.png');
+    }
+    
+    h1{
+      color: Gold;
+    }
+    
+    h2{
+      color: Gold;
+    }
+    
+    .center{
+      margin: 0 auto;
+      width: 85%;
+      text-align: center;
+    }
+    
+    .newsection{
+      padding: 5px;
+    }
+
+     .div1{
+      padding: 5px;
+      float: right;
+      margin: 5%;
+    }
+
+    a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+    </style>
+  </head>
+  
+  <body>
+  <div class="center">
+    <h1>Contact Aim-E</h1>
+  <img src="flowers.gif" alt="Flowers" style="width:800px;height:50px;width:70%">
+
+  <div class="newsection">
+        <br>
+        <h2>Let's connect</h2>
+        <img width="100" height="100" src="call.png"> 
+        <h2>Email</h2>
+   <p>youknowthechi@gmail.com</p>
+   <h2>Phone</h2>
+   <p>718-442-5839</p>
+  </div>
+
+<br>
+ <img src="flowers.gif" alt="Flowers" style="width:800px;height:50px;width:70%">
+  <h2>Links:</h2>
+    <p><a href="file:///Users/amyc/Desktop/FINAL%20FOR%20WEB%20DEVELOPMENT/webdevfinal.html">Home</a></p>
+    <p><a href="file:///Users/amyc/Desktop/FINAL%20FOR%20WEB%20DEVELOPMENT/aboutfinal.html">About Me</a></p>
+    <p><a href="file:///Users/amyc/Desktop/FINAL%20FOR%20WEB%20DEVELOPMENT/poetryfinal.html">Poetry</a></p>
+    <p><a href="file:///Users/amyc/Desktop/FINAL%20FOR%20WEB%20DEVELOPMENT/docfinal.html">Documentary</a></p>
+        <div id="song">refresh 2 change song</div>
+
+<script>let mySongs = ["https://sadhost.neocities.org/music/01.%20%D0%9A%D0%BB%D0%BE%D1%83%D0%BD%D1%8B.mp3", "https://sadhost.neocities.org/music/allshewants.mp3", "https://sadhost.neocities.org/music/justthetwo.mp3"];
+        
+  let x = Math.floor(Math.random() * mySongs.length);
+  var element = document.getElementById('myAudio');
+  var myDiv = document.getElementById('song');
+
+function songChooser(mySongs){
+  return mySongs[x];
+}
+
+window.addEventListener('load', (event) => {
+  let createAudio = `
+<audio id="myAudio" controls>
+<source src="${songChooser(mySongs)}">
+        `;
+    myDiv.innerHTML = createAudio;
+});
+</script>
+    <h2>Thank You For Visiting My Website</h2>
+     <img src="bye.gif" alt="Bye" style="width:500px;height:200px;width:50%">
+
+  </body>
+</html>
